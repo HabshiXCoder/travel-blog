@@ -1,0 +1,234 @@
+/* =====================================
+   Contact Page Styles | Wonder Lanka
+   ===================================== */
+
+/* ==========================
+   General Styles
+   ========================== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f9ff; /* light, clean background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #00bcd4;
+}
+
+a:hover {
+  color: #ff7b00;
+}
+
+/* ==========================
+   Main Container
+   ========================== */
+.contact-container {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 60px 40px;
+  background: linear-gradient(145deg, #ffffff, #e6f7ff);
+  border-radius: 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative floating shapes */
+.contact-container::before,
+.contact-container::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(0, 188, 212, 0.1);
+  width: 200px;
+  height: 200px;
+  z-index: 0;
+}
+
+.contact-container::before {
+  top: -50px;
+  left: -50px;
+}
+
+.contact-container::after {
+  bottom: -50px;
+  right: -50px;
+}
+
+/* ==========================
+   Title & Subtitle
+   ========================== */
+.contact-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  z-index: 1;
+  position: relative;
+}
+
+.contact-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 50px;
+  line-height: 1.6;
+  z-index: 1;
+  position: relative;
+}
+
+/* ==========================
+   Layout
+   ========================== */
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+/* ==========================
+   Form Container
+   ========================== */
+.contact-form-container {
+  flex: 1;
+  min-width: 320px;
+}
+
+.contact-form-container form {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+}
+
+.contact-form-container form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Labels */
+.contact-form-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Inputs & Textarea */
+.contact-form-container input,
+.contact-form-container textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.contact-form-container input:focus,
+.contact-form-container textarea:focus {
+  border-color: #00bcd4;
+  box-shadow: 0 6px 20px rgba(0, 188, 212, 0.25);
+  outline: none;
+}
+
+/* Submit Button */
+.contact-form-container button {
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form-container button:hover {
+  background-color: #ff7b00;
+  transform: scale(1.05);
+}
+
+/* Form Message */
+.form-message {
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* ==========================
+   Contact Info / Map
+   ========================== */
+.contact-info {
+  flex: 1;
+  min-width: 320px;
+  z-index: 1;
+  position: relative;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  color: #00bcd4;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Map Container */
+.map-container {
+  margin-top: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================
+   Animations
+   ========================== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease;
+}
+
+.fade-up.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==========================
+   Responsive
+   ========================== */
+@media (max-width: 1000px) {
+  .contact-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-container {
+    padding: 40px 20px;
+  }
+
+  .contact-title {
+    font-size: 2.2rem;
+  }
+
+  .contact-subtitle {
+    font-size: 1rem;
+  }
+}

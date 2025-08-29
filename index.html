@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/Logo (2).png" type="image/png">
+
+</head>
+<body>
+    <div class="Container">
+
+        <div class="bg_container">
+
+            <!-- Navigation Bar -->
+<div class="nav">
+    <!-- Logo -->
+    <a href="index.html">
+        <img src="images/Logo (2).png" alt="Wonder Lanka Logo">
+    </a>
+
+    <!-- Navigation Links -->
+    <ul>
+        <li class="nav-item"><a href="index.html">HOME</a></li>
+        <li class="nav-item"><a href="About.html">ABOUT</a></li>
+        <li class="nav-item"><a href="Contact.html">CONTACT</a></li>
+        <li class="nav-item"><a href="Gallery.html">GALLERY</a></li>
+        <li><a href="Blog.html">BLOG</a></li>
+    </ul>
+</div>
+
+
+            <div class="slider"> <!-- Slide 1 -->
+                 <div class="slide">
+                    <img src="images/NuweraEliya.jpeg" alt="Nuwara Eliya">
+                    <div class="body_text">
+                        <h1>WELCOME TO Wonder Lanka</h1>
+                        <p>Discover the hidden gems of Sri Lanka – from golden beaches and lush tea hills to vibrant cities and timeless cultural wonders.</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="images/beach.jpg" alt="Beach">
+                    <div class="body_text">
+                        <h1>Golden Beaches</h1>
+                        <p>Relax and enjoy the warm sun on pristine golden beaches that stretch along the coastline.</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <img src="images/sigiriya.jpeg" alt="Sigiriya">
+                    <div class="body_text">
+                        <h1>Majestic Sigiriya</h1>
+                        <p>Climb the iconic Sigiriya Rock Fortress and witness breathtaking views of Sri Lanka’s heartland.</p>
+                    </div>
+                </div>
+
+        <!-- Navigation Buttons -->
+        <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+        <span class="next" onclick="changeSlide(1)">&#10095;</span>
+    </div>	<!-- end of the body text div -->
+
+        <!-- About Section -->
+    <div class="about-section" id="about">
+        <h2>About Me</h2>
+            <div class="about-content">
+        
+        <!-- Text Content -->
+                <div class="about-text">
+                <p>
+                Hello! I’m a passionate traveler exploring the <span class="highlight">hidden gems</span> of Sri Lanka. 
+                From golden beaches to misty mountains, each journey brings <span class="highlight">new stories</span> 
+                and unforgettable experiences.
+                </p>
+                <p>
+                    Through this blog, I share my personal adventures, tips, and cultural encounters, 
+                    helping fellow travelers <span class="highlight">connect</span> with the real Sri Lanka. 
+                    <a href="About.html">Read more →</a>
+                </p>
+                </div>
+
+           <!-- Image Content -->
+            <div class="about-image">
+                <img src="images/aboutme.jpg" alt="Photo of me traveling in Sri Lanka">
+            </div>
+        </div>
+    </div>
+
+ <!-- End about section -->
+
+        <!-- Sliding Gallery Section -->
+    <div class="slider-gallery-section" id="slider-gallery">
+        <h2>Photo Highlights</h2>
+        <p>Swipe or scroll to see some amazing places from Sri Lanka.</p>
+
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <div class="slide-item"><img src="images/NuweraEliya.jpeg" alt="Nuwera Eliya"></div>
+                <div class="slide-item"><img src="images/beach.jpg" alt="Golden Beach"></div>
+                <div class="slide-item"><img src="images/sigiriya.jpeg" alt="Sigiriya"></div>
+                <div class="slide-item"><img src="images/kandy.webp" alt="Kandy City"></div>
+                <div class="slide-item"><img src="images/travel.jpeg" alt="Travel"></div>
+            </div>
+        </div>
+
+        <!-- Dots Navigation -->
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <a href="Gallery.html" class="gallery-btn">View Full Gallery →</a>
+    </div>
+
+    <!-- end of div gallery -->
+
+<section class="video-section">
+  <h2>Travel Highlights</h2>
+  <p>Swipe or click arrows to view the videos showcasing Sri Lanka.</p>
+
+  <div class="video-slider-wrapper">
+    <span class="prev" onclick="changeVideo(-1)">&#10094;</span>
+    <span class="next" onclick="changeVideo(1)">&#10095;</span>
+
+    <div class="video-slider">
+      <!-- Slide 1: Landscape Video -->
+      <div class="video-slide active">
+        <video controls muted playsinline>
+          <source src="videos/landscape-video.mp4" type="video/mp4">
+          <source src="videos/landscape-video.webm" type="video/webm">
+          Your browser does not support the video tag.
+        </video>
+        <p>Full Travel Video</p>
+      </div>
+
+      <!-- Slide 2: Portrait Video -->
+      <div class="video-slide">
+        <video controls muted playsinline>
+          <source src="videos/portrait-video.mp4" type="video/mp4">
+          <source src="videos/portrait-video.webm" type="video/webm">
+          Your browser does not support the video tag.
+        </video>
+        <p>Short Cultural Clip</p>
+      </div>
+    </div>
+
+    <!-- Dots navigation -->
+    <div class="video-dots">
+      <span class="dot active" onclick="currentVideo(0)"></span>
+      <span class="dot" onclick="currentVideo(1)"></span>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- end of video section -->
+
+    <!-- Footer Section -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- About / Logo -->
+        <div class="footer-about">
+            <img src="images/Logo (2).png" alt="Wonder Lanka Logo">
+            <p>Wonder Lanka is your ultimate travel companion for exploring the hidden gems and cultural wonders of Sri Lanka. Join us to discover new adventures and unforgettable experiences.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Blog.html">BLOG</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="footer-newsletter">
+            <h3>Subscribe</h3>
+            <p>Get updates about our latest travel blogs and videos!</p>
+            <input type="email" id="newsletter-email" placeholder="Your Email">
+            <button id="subscribe-btn">Subscribe</button>
+            <p class="subscription-message"></p>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/evc" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/evc" target="_blank">Instagram</a>
+                <a href="https://www.twitter.com/evc" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Wonder Lanka. All Rights Reserved.</p>
+        <button id="back-to-top">Back to Top</button>
+    </div>
+</footer>
+
+
+
+        </div> <!-- End of bg_container div -->
+
+    </div> <!-- End of Container Div -->
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Wonder Lanka</title>
+  <link rel="stylesheet" href="style.css"> <!-- Global styles -->
+  <link rel="stylesheet" href="gallery.css"> <!-- Gallery-specific styles -->
+  <link rel="icon" href="images/Logo (2).png" type="image/png">
+</head>
+<body>
+
+  <div class="Container">
+
+    <!-- ================= NAVIGATION ================= -->
+    <div class="nav">
+      <a href="index.html"><img src="images/Logo (2).png" alt="Wonder Lanka Logo"></a>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li class="active"><a href="Gallery.html">GALLERY</a></li>
+        <li><a href="Contact.html">CONTACT</a></li>
+        <li><a href="Blog.html">BLOG</a></li>
+      </ul>
+    </div>
+    <!-- ================= END NAVIGATION ================= -->
+
+    <!-- ================= GALLERY SECTION ================= -->
+    <section class="gallery-container">
+      <h1 class="gallery-title">Explore Wonder Lanka</h1>
+      <p class="gallery-subtitle">A visual journey across Sri Lanka, from hidden gems to breathtaking landscapes.</p>
+
+      <div class="decorative-shapes">
+        <span class="shape circle"></span>
+        <span class="shape wave"></span>
+        <span class="shape leaf"></span>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Gallery Item 1 -->
+        <div class="gallery-item fade-up">
+          <img src="images/clmbo.jpeg" alt="Colombo">
+          <div class="gallery-overlay">
+            <h3>Colombo</h3>
+            <p>Urban adventures and cultural gems in the capital.</p>
+          </div>
+        </div>
+
+        <!-- Gallery Item 2 -->
+        <div class="gallery-item fade-up">
+          <img src="images/kandy.webp" alt="Kandy">
+          <div class="gallery-overlay">
+            <h3>Kandy</h3>
+            <p>The heart of culture, temples, and traditions.</p>
+          </div>
+        </div>
+
+        <!-- Gallery Item 3 -->
+        <div class="gallery-item fade-up">
+          <img src="images/ella.jpeg" alt="Ella">
+          <div class="gallery-overlay">
+            <h3>Ella</h3>
+            <p>Lush tea plantations and scenic mountain trails.</p>
+          </div>
+        </div>
+
+        <!-- Gallery Item 4 -->
+        <div class="gallery-item fade-up">
+          <img src="images/sthncost.jpeg" alt="Southern Coast">
+          <div class="gallery-overlay">
+            <h3>Southern Coast</h3>
+            <p>Relaxing beaches and coastal adventures.</p>
+          </div>
+        </div>
+
+        <!-- Add more gallery items as needed -->
+      </div>
+    </section>
+    <!-- ================= END GALLERY SECTION ================= -->
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <img src="images/Logo (2).png" alt="Wonder Lanka Logo">
+          <p>
+            Wonder Lanka is your trusted travel companion to explore Sri Lanka’s hidden gems, cultural treasures, and breathtaking landscapes.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h3>Subscribe</h3>
+          <p>Get updates about our latest travel blogs and videos!</p>
+          <input type="email" id="newsletter-email" placeholder="Your Email">
+          <button id="subscribe-btn">Subscribe</button>
+          <p class="subscription-message"></p>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Wonder Lanka. All Rights Reserved.</p>
+        <button id="back-to-top">Back to Top</button>
+      </div>
+    </footer>
+    <!-- ================= END FOOTER ================= -->
+
+  </div>
+
+  <script src="gallery.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

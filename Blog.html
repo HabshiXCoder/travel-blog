@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Wonder Lanka</title>
+  <link rel="stylesheet" href="style.css"> <!-- Global styles -->
+  <link rel="stylesheet" href="blog.css">  <!-- Blog-specific styles -->
+  <link rel="icon" href="images/Logo (2).png" type="image/png">
+</head>
+<body>
+
+<div class="Container">
+
+  <!-- ================= NAVIGATION ================= -->
+  <div class="nav">
+    <a href="index.html"><img src="images/Logo (2).png" alt="Wonder Lanka Logo"></a>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="About.html">ABOUT</a></li>
+      <li><a href="Gallery.html">GALLERY</a></li>
+      <li><a href="Contact.html">CONTACT</a></li>
+      <li class="active"><a href="Blog.html">BLOG</a></li>
+    </ul>
+  </div>
+  <!-- ================= END NAVIGATION ================= -->
+
+  <!-- ================= BLOG SECTION ================= -->
+  <section class="blog-container">
+    <h1 class="blog-title">Travel Stories & Insights</h1>
+    <p class="blog-subtitle">
+      Discover my adventures across Sri Lanka. Each blog contains hidden gems, culture, and personal experiences.
+    </p>
+
+    <div class="blog-list">
+
+      <!-- Blog Post 1 -->
+      <article class="blog-card fade-up" data-fulltext="Colombo is more than just the bustling capital of Sri Lanka. Explore markets, temples, and local street food. Enjoy nightlife, cultural performances, and hidden gems in the heart of the city. Experience historic colonial buildings and scenic harbor views." data-image="images/clmbo.jpeg">
+        <div class="blog-image">
+          <img src="images/clmbo.jpeg" alt="Colombo City">
+        </div>
+        <div class="blog-content">
+          <h2>Exploring Colombo’s Hidden Gems</h2>
+          <p class="blog-meta">Written: Jan 12, 2023 • Updated: Mar 5, 2023</p>
+          <p class="blog-excerpt">
+            Colombo is more than just the bustling capital of Sri Lanka. Explore markets, temples, and local street food...
+          </p>
+          <button class="read-more-btn">Read More</button>
+        </div>
+      </article>
+
+      <!-- Blog Post 2 -->
+      <article class="blog-card fade-up" data-fulltext="Kandy is the cultural heart of Sri Lanka. Sacred temples, traditional dances, festivals, and serene lakes await visitors. Explore local markets, learn about Buddhist traditions, and enjoy the lush scenery surrounding the city." data-image="images/kandy.webp">
+        <div class="blog-image">
+          <img src="images/kandy.webp" alt="Kandy">
+        </div>
+        <div class="blog-content">
+          <h2>Kandy – The Cultural Hub</h2>
+          <p class="blog-meta">Written: Feb 8, 2023 • Updated: Apr 15, 2023</p>
+          <p class="blog-excerpt">
+            Kandy is the cultural heart of Sri Lanka, with sacred temples and lush surroundings...
+          </p>
+          <button class="read-more-btn">Read More</button>
+        </div>
+      </article>
+
+      <!-- Blog Post 3 -->
+      <article class="blog-card fade-up" data-fulltext="Ella is a nature lover’s paradise. From scenic tea plantations and waterfalls to breathtaking mountain trails. Hike famous trails like Little Adam’s Peak and visit Nine Arches Bridge. Immerse in village culture and stunning views." data-image="images/ella.jpeg">
+        <div class="blog-image">
+          <img src="images/ella.jpeg" alt="Ella">
+        </div>
+        <div class="blog-content">
+          <h2>A Nature Lover’s Guide to Ella</h2>
+          <p class="blog-meta">Written: Mar 10, 2023 • Updated: May 2, 2023</p>
+          <p class="blog-excerpt">
+            Ella is a nature lover’s paradise. From scenic tea plantations and waterfalls to breathtaking trails...
+          </p>
+          <button class="read-more-btn">Read More</button>
+        </div>
+      </article>
+
+      <!-- Blog Post 4 -->
+      <article class="blog-card fade-up" data-fulltext="The Southern Coast of Sri Lanka is ideal for beaches, whale watching, and coastal adventures. Relax on golden sands, explore hidden coves, and enjoy seafood delights. Perfect for both adventure seekers and leisure travelers." data-image="images/sthncost.jpeg">
+        <div class="blog-image">
+          <img src="images/sthncost.jpeg" alt="Southern Coast">
+        </div>
+        <div class="blog-content">
+          <h2>Discovering Sri Lanka’s Southern Coast</h2>
+          <p class="blog-meta">Written: Apr 5, 2023 • Updated: Jun 20, 2023</p>
+          <p class="blog-excerpt">
+            The Southern Coast of Sri Lanka offers beaches, whale watching, and coastal adventures...
+          </p>
+          <button class="read-more-btn">Read More</button>
+        </div>
+      </article>
+
+      <!-- Blog Post 5 -->
+      <article class="blog-card fade-up" data-fulltext="Nuwara Eliya, known as 'Little England', offers cool climate, tea estates, and colonial architecture. Explore Gregory Lake, Hakgala Gardens, and enjoy fresh local produce. Ideal for a peaceful retreat surrounded by scenic hills." data-image="images/nuwaraeliya.jpeg">
+        <div class="blog-image">
+          <img src="images/nuwaraeliya.jpeg" alt="Nuwara Eliya">
+        </div>
+        <div class="blog-content">
+          <h2>Nuwara Eliya – Little England</h2>
+          <p class="blog-meta">Written: May 12, 2023 • Updated: Jul 3, 2023</p>
+          <p class="blog-excerpt">
+            Nuwara Eliya, known as 'Little England', offers cool climate and scenic hills...
+          </p>
+          <button class="read-more-btn">Read More</button>
+        </div>
+      </article>
+
+    </div>
+
+  </section>
+
+  <!-- ================= MODAL ================= -->
+  <div id="blog-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img class="modal-image" src="" alt="Blog Image">
+      <h2 class="modal-title"></h2>
+      <p class="modal-meta"></p>
+      <p class="modal-text"></p>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <img src="images/Logo (2).png" alt="Wonder Lanka Logo">
+        <p>
+          Wonder Lanka is your trusted travel companion to explore Sri Lanka’s hidden gems, cultural treasures, and 
+          breathtaking landscapes.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="Blog.html">BLOG</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h3>Subscribe</h3>
+        <p>Get updates about our latest travel blogs and videos!</p>
+        <input type="email" id="newsletter-email" placeholder="Your Email">
+        <button id="subscribe-btn">Subscribe</button>
+        <p class="subscription-message"></p>
+      </div>
+
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+          <a href="https://instagram.com" target="_blank">Instagram</a>
+          <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> Wonder Lanka. All Rights Reserved.</p>
+      <button id="back-to-top">Back to Top</button>
+    </div>
+  </footer>
+  <!-- ================= END FOOTER ================= -->
+
+</div>
+
+<script src="blog.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
